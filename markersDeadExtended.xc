@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Options for dead with Alt markers.
  * Настройки маркеров для трупов с Alt.
  */
@@ -23,30 +23,30 @@
       // Параметры шрифта.
       "textFormat": {
         "font": "$FieldFont",           // Font name      / Название
-        "size": 14,                     // Font size      / Размер
+        "size": 18,                     // Font size      / Размер
         // Color (dynamic colors allowed, see macros.txt).
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": null,
-        "bold": true,                  // True - bold    / Жирный.
+        "bold": false,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
       "shadow": {
         // false - no shadow
         // false - без тени
         "enabled": true,
-        "distance": 1,                  // (in pixels)     / offset distance / дистанция смещения
+        "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
         "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
         "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
-        "blur": 2,                      // (0.0 .. 255.0)  / blur            / размытие
-        "strength": 2                   // (0.0 .. 255.0)  / intensity       / интенсивность
+        "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 1                   // (0.0 .. 255.0)  / intensity       / интенсивность
       },
       // Rising speed of displayed damage (float up speed).
       // Время отображения отлетающего урона.
-      "speed": 3,
+      "speed": 2,
       // Maximum distance of target for which damage rises.
       // Расстояние, на которое отлетает урон.
-      "maxRange": 100,
+      "maxRange": 40,
       // Text for normal damage (see description of macros in the macros.txt).
       // Текст при обычном уроне (см. описание макросов в macros.txt).
       "damageMessage": "{{dmg}}",
@@ -62,13 +62,13 @@
       "x": 0,                         // положение по оси X
       "y": -34,                       // положение по оси Y
       "alpha": 80,                    // прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "align": "center",              // выравнивание текста (left, center, right)
       // Font options.
       // Параметры шрифта.
       "textFormat": {
         "font": "$FieldFont",         //   название
         "size": 13,                   //   размер
         "color": null,                //   цвет (допускается использование динамического цвета, см. macros.txt)
-        "align": "center",            //   выравнивание текста (left, center, right)
         "bold": false,                //   обычный (false) или жирный (true)
         "italic": false               //   обычный (false) или курсив (true)
       },
@@ -82,7 +82,7 @@
         "angle": 45,                  //   угол смещения
         "color": "0x000000",          //   цвет
         "alpha": 100,                 //   прозрачность
-        "blur": 3,                    //   размытие
+        "blur": 6,                    //   размытие
         "strength": 2                 //   интенсивность
       },
       "format": "{{nick}}"            //   формат текста. См. описание макросов в macros.txt
@@ -95,11 +95,11 @@
       "x": 0,                         // положение по оси X
       "y": -20,                       // положение по оси Y
       "alpha": 80,                    // прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "align": "center",              // выравнивание текста (left, center, right)
       "textFormat": {                 // параметры шрифта
         "font": "$FieldFont",         //   название
         "size": 13,                   //   размер
         "color": null,                //   цвет (допускается использование динамического цвета, см. macros.txt)
-        "align": "center",            //   выравнивание текста (left, center, right)
         "bold": false,                //   обычный (false) или жирный (true)
         "italic": false               //   обычный (false) или курсив (true)
       },
@@ -109,7 +109,7 @@
         "angle": 45,                  //   угол смещения
         "color": "0x000000",          //   цвет
         "alpha": 100,                 //   прозрачность
-        "blur": 3,                    //   размытие
+        "blur": 6,                    //   размытие
         "strength": 2                 //   интенсивность
       },
       "format": "{{vehicle}}"         // формат текста. См. описание макросов в macros.txt
@@ -144,28 +144,28 @@
     },
     // Индикатор здоровья.
     "healthBar": {
-      "enabled": false,                  //   false - не отображать
-      "x": -36,                         //   положение по оси X
-      "y": -34,                         //   положение по оси Y
+      "enabled": false,                 //   false - не отображать
+      "x": -41,                         //   положение по оси X
+      "y": -33,                         //   положение по оси Y
       "alpha": 100,                     //   прозрачность (допускается использование динамической прозрачности, см. macros.txt)
       "color": null,                    //   цвет основной (допускается использование динамического цвета, см. macros.txt)
       "lcolor": null,                   //   цвет дополнительный (для градиента)
-      "width": 70,                      //   ширина полосы здоровья
-      "height": 4,                     //   высота полосы здоровья
+      "width": 80,                      //   ширина полосы здоровья
+      "height": 12,                     //   высота полосы здоровья
       // Параметры подложки и рамки.
       "border": {
-        "alpha": 45,                    //     прозрачность
+        "alpha": 30,                    //     прозрачность
         "color": "0x000000",            //     цвет
         "size": 1                       //     размер рамки
       },
       // Параметры оставшегося здоровья.
       "fill": {
-        "alpha": 50                     //     прозрачность
+        "alpha": 30                     //     прозрачность
       },
       // Параметры анимации отнимаемого здоровья.
       "damage": {
-        "alpha": 100,                   //     прозрачность
-        "color": null,           //     цвет
+        "alpha": 80,                    //     прозрачность
+        "color": null,                  //     цвет
         "fade": 1                       //     время затухания в секундах
       }
     },
@@ -187,8 +187,8 @@
       "enabled": false,
       // Axis field coordinates.
       // Положение поля по осям.
-      "x": 0,
-      "y": -47,
+      "x": 6,
+      "y": -65,
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt).
       "alpha": 100,
@@ -204,7 +204,7 @@
     "levelIcon": {
       "enabled": false,  // false - disable        / не отображать.
       "x": 0,            // Position on the X axis / Положение по оси X.
-      "y": -16,          // Position on the Y axis / Положение по оси Y.
+      "y": -21,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
     // Markers "Help!" and "Attack!".
@@ -215,8 +215,16 @@
       "y": -67,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
-    // Block of text fields.
-    // Блок текстовых полей.
+    // Stun marker
+    // Маркер оглушения
+    "stunMarker": {
+      "enabled": true,   // false - disable        / не отображать.
+      "x": 0,            // Position on the X axis / Положение по оси X.
+      "y": -67,          // Position on the Y axis / Положение по оси Y.
+      "alpha": 100       // Opacity                / Прозрачность.
+    },
+    // Block of text fields (extended format supported, see extra-field.txt).
+    // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
       ${ "def.tankName" },
       ${ "def.playerName" }
@@ -275,8 +283,8 @@
     // Контурная иконка танка.
     "contourIcon": {
       "enabled": false,
-      "x": 0,
-      "y": -47,
+      "x": 6,
+      "y": -65,
       "alpha": 100,
       "color": null,
       "amount": 0
@@ -286,7 +294,7 @@
     "levelIcon": {
       "enabled": false,
       "x": 0,
-      "y": -16,
+      "y": -21,
       "alpha": 100
     },
     // Markers "Help!" and "Attack!".
@@ -297,8 +305,16 @@
       "y": -67,
       "alpha": 100
     },
-    // Block of text fields.
-    // Блок текстовых полей.
+    // Stun marker
+    // Маркер оглушения
+    "stunMarker": {
+      "enabled": true,
+      "x": 0,
+      "y": -67,
+      "alpha": 100
+    },
+    // Block of text fields (extended format supported, see extra-field.txt).
+    // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
       ${ "def.tankName" },
       ${ "def.playerName" }

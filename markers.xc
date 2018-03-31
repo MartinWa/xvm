@@ -1,19 +1,24 @@
-/**
+﻿/**
  * Over-target markers. All settings moved to separate files.
  * Маркеры над танками. Все настройки вынесены в отдельные файлы.
  */
 {
   "markers": {
     // false - use standard client vehicle markers.
+    // false - использовать стандартные маркеры клиента.
     "enabled": true,
     // {{turret}} marker display strings.
+    // Отображаемые строки {{turret}} маркера.
     "turretMarkers": {
       // Subject has stock turret and top gun can not be mounted. Subject is highly vulnerable.
-      "highVulnerability": "<img src='cfg://Aslain/icons/untick.png' width='10' height='10'>",
+      // Субъект имеет стоковую башню и топ орудие не может быть установлено. Субъект сильно уязвим.
+      "highVulnerability": "*",
       // Subject has stock turret and top gun can be mounted. Subject is somewhat vulnerable.
-      "lowVulnerability": "<img src='cfg://Aslain/icons/tick.png' width='10' height='10'>"
+      // Субъект имеет стоковую башню и топ орудие может быть установлено. Субъект немного уязвим.
+      "lowVulnerability": "'"
     },
     // ally
+    // союзники
     "ally": {
       "alive": {
         "normal": ${"markersAliveNormal.xc":"ally"},
@@ -25,6 +30,7 @@
       }
     },
     // enemy
+    // противники
     "enemy": {
       "alive": {
         "normal": ${"markersAliveNormal.xc":"enemy"},

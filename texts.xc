@@ -1,5 +1,5 @@
-/**
- * Text substitutions. ASLAINS
+﻿/**
+ * Text substitutions.
  * Текстовые подстановки.
  */
 {
@@ -7,16 +7,16 @@
     // Text for {{vtype}} macro.
     // Текст для макроса {{vtype}}.
     "vtype": {
-      // Text for light tanks
-      "LT":  "<font face='xvm'>&#x3A;</font>",
-      // Text for medium tanks
-      "MT":  "<font face='xvm'>&#x3B;</font>",
-      // Text for heavy tanks
-      "HT":  "<font face='xvm'>&#x3F;</font>",
-      // Text for arty
-      "SPG": "<font face='xvm'>&#x2D;</font>",
-      // Text for tank destroyers
-      "TD":  "<font face='xvm'>&#x2E;</font>"
+      // Text for light tanks / Текст для легких танков.
+      "LT":  "{{l10n:LT}}",
+      // Text for medium tanks / Текст для средних танков.
+      "MT":  "{{l10n:MT}}",
+      // Text for heavy tanks / Текст для тяжелых танков.
+      "HT":  "{{l10n:HT}}",
+      // Text for arty / Текст для арты.
+      "SPG": "{{l10n:SPG}}",
+      // Text for tank destroyers / Текст для ПТ.
+      "TD":  "{{l10n:TD}}"
     },
     // Text for {{marksOnGun}}, {{v.marksOnGun}} macros.
     // Текст для макросов {{marksOnGun}}, {{v.marksOnGun}}
@@ -29,13 +29,13 @@
     // Text for {{spotted}} macro.
     // Текст для макроса {{spotted}}
     "spotted": {
-      "neverSeen": "<img src='cfg://Aslain/icons/hidden.png' width='22' height='14'>  ",
-      "lost": "<img src='cfg://Aslain/icons/lost.png' width='22' height='14'>  ",
-      "spotted": "<img src='cfg://Aslain/icons/onmap.png' width='22' height='14'>  ",
+      "neverSeen": "",
+      "lost": "<font face='xvm' size='24'>&#x70;</font>",
+      "spotted": "<font face='xvm' size='24'>&#x70;</font>",
       "dead": "",
-      "neverSeen_arty": "<img src='cfg://Aslain/icons/hidden.png' width='22' height='14'>  ",
-      "lost_arty": "<img src='cfg://Aslain/icons/lost.png' width='22' height='14'>  ",
-      "spotted_arty": "<img src='cfg://Aslain/icons/onmap.png' width='22' height='14'>  ",
+      "neverSeen_arty": "",
+      "lost_arty": "<font face='xvm' size='24'>&#x70;</font>",
+      "spotted_arty": "<font face='xvm' size='24'>&#x70;</font>",
       "dead_arty": ""
     },
     // Text for {{xvm-user}} macro.

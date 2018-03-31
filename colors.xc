@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Color settings.
  * Настройки цветов.
  */
@@ -15,10 +15,10 @@
     // Динамический цвет по различным статистическим показателям.
     "colorRating": {
       "very_bad":     "0xFE0E00",   // very bad   / очень плохо
-      "bad":          "0xFF6600",   // bad        / плохо
+      "bad":          "0xFE7903",   // bad        / плохо
       "normal":       "0xF8F400",   // normal     / средне
       "good":         "0x60FF00",   // good       / хорошо
-      "very_good":    "0x00B4FF",   // very good  / очень хорошо
+      "very_good":    "0x02C9B3",   // very good  / очень хорошо
       "unique":       "0xD042F3"    // unique     / уникально
     },
     // Dynamic color by remaining health points.
@@ -222,14 +222,14 @@
       { "value": 92.4, "color": ${"def.colorRating.very_good"} }, // 76 - 92 - very good (better than 99% of players)
       { "value": 999,  "color": ${"def.colorRating.unique"   } }  // 93 - XX - unique    (better than 99.9% of players)
     ],
-    // Текущие граничные значения для рейтингов указаны на данной странице: (TODO) https://nightly.modxvm.com/xvmscales/
-    // Current scales values ​​for ratings are listed on this page: (TODO) https://nightly.modxvm.com/xvmscales/
+    // Current scales values ​​for ratings are listed on this page: https://modxvm.com/en/ratings/xvm-scale/colors/
+    // Текущие граничные значения для рейтингов указаны на данной странице: https://modxvm.com/ru/ratings/xvm-scale/colors/
     //
     // Custom dynamic colors by ratings.
     // If you want use your own color scales,
     // uncomment this block and replace "rating_name" to one of this values: "eff", "wn8", "wtr", "wgr"
     // Динамический цвет по указанному рейтингу.
-    // Если вы хотите использовать свои собственные границы цветов вместо стандартных, 
+    // Если вы хотите использовать свои собственные границы цветов вместо стандартных,
     // раскомментируйте блок и замените "rating_name" на одно из следующих значений: "eff", "wn8", "wtr", "wgr"
     // "rating_name": [
     //  { "value": 500,   "color": ${"def.colorRating.very_bad" } }, //    0 - 500   - very bad
@@ -247,7 +247,7 @@
       { "value": 52.49, "color": ${"def.colorRating.normal"   } }, // 48.5 - 52.5  - normal    (better than 60% of players)
       { "value": 57.49, "color": ${"def.colorRating.good"     } }, // 52.5 - 57.5  - good      (better than 90% of players)
       { "value": 64.49, "color": ${"def.colorRating.very_good"} }, // 57.5 - 64.5  - very good (better than 99% of players)
-      { "value": 100,  "color": ${"def.colorRating.unique"   } }  // 64.5 - 100   - unique    (better than 99.9% of players)
+      { "value": 100,   "color": ${"def.colorRating.unique"   } }  // 64.5 - 100   - unique    (better than 99.9% of players)
     ],
     // Dynamic color by kilo-battles
     // Динамический цвет по количеству кило-боев
@@ -332,12 +332,10 @@
     // Dynamic color by damage rating (percents for marks on gun)
     // Динамический цвет по рейтингу урона (процент для отметок на стволе)
     "damageRating": [
-      { "value": 20,   "color": ${"def.colorRating.very_bad" } }, // 20% of players
-      { "value": 60,   "color": ${"def.colorRating.bad"      } }, // better than 20% of players
-      { "value": 90,   "color": ${"def.colorRating.normal"   } }, // better than 60% of players
-      { "value": 99,   "color": ${"def.colorRating.good"     } }, // better than 90% of players
-      { "value": 99.9, "color": ${"def.colorRating.very_good"} }, // better than 99% of players
-      { "value": 100,  "color": ${"def.colorRating.unique"   } }  // better than 99.9% of players
+      { "value": 64.99, "color": ${"def.colorRating.very_bad"} }, // 0-64.99
+      { "value": 84.99, "color": ${"def.colorRating.normal"  } }, // 65-84.99
+      { "value": 94.99, "color": ${"def.colorRating.good"    } }, // 85-94.99
+      { "value": 100,   "color": ${"def.colorRating.unique"  } }  // 95-*
     ],
     // Dynamic color by hit ratio (percents of hits)
     // Динамический цвет по проценту попаданий

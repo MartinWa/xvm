@@ -1,10 +1,10 @@
 ﻿/**
  * General parameters for minimap.
- * Общие параметры миникарты. Видео по некоторым аспектам редактирования http://www.youtube.com/watch?feature=player_embedded&v=NBJcqWuEoLo
+ * Общие параметры миникарты. Видео по некоторым аспектам редактирования https://www.youtube.com/watch?feature=player_embedded&v=NBJcqWuEoLo
  */
 {
   "minimap": {
-    // false - Disable.
+    // false - disable.
     // false - отключить.
     "enabled": false,
     // Map image transparency.
@@ -58,13 +58,13 @@
     "mapSize": ${"minimapMapSize.xc":"mapSize"},
     // false - use standard circles
     // false - использовать стандартные круги
-    "circlesEnabled": false,
+    "circlesEnabled": true,
     // false - use standard labels
     // false - использовать стандартные надписи
-    "labelsEnabled": false,
+    "labelsEnabled": true,
     // false - use standard lines
     // false - использовать стандартные линии
-    "linesEnabled": false,
+    "linesEnabled": true,
     // Minimap labels.
     // Надписи на миникарте.
     "labels": ${"minimapLabels.xc":"labels"},

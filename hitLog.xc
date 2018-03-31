@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Hit log (my hits calculator).
  * For additional settings see battleLabelsTemplates.xc/hitlog
  * Лог попаданий (счетчик своих попаданий).
@@ -11,7 +11,7 @@
     "groupHitsByPlayer": true,
     // Insert order: begin - insert new values to begin, end - add to end.
     // Сортировка попаданий: begin - новые значения добавляются сверху, end - снизу.
-    "insertOrder": "end",
+    "insertOrder": "begin",
     // Substitution for {{hitlog.dead}} macro when tank is dead.
     // Подстановка для макроса {{hitlog.dead}}, когда танк умирает.
     "deadMarker": "&#x77;",

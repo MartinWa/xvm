@@ -1,4 +1,4 @@
-/**
+﻿/**
  * List of battle interface labels.
  * Список текстовых полей боевого интерфейса.
  */
@@ -13,7 +13,6 @@
     "formats": [
       ${ "battleLabelsTemplates.xc":"def.hitlogHeader" },
       ${ "battleLabelsTemplates.xc":"def.hitlogBody" },
-      ${ "battleLabelsTemplates.xc":"def.winChance" }, ${ "battleLabelsTemplates.xc":"def.teamRating"},
       ${ "battleLabelsTemplates.xc":"def.totalHP" },
       ${ "battleLabelsTemplates.xc":"def.avgDamage" },
       ${ "battleLabelsTemplates.xc":"def.mainGun" },
@@ -25,10 +24,12 @@
       ${ "battleLabelsTemplates.xc":"def.repairTimeEngine" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeGun" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeTurret" },
-      ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" },
+      ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" }, 
       ${ "battleLabelsTemplates.xc":"def.repairTimeSurveying" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeRadio" },
-	  {}
-    ]
+      ${ "battleLabelsTemplates.xc":"def.winChance" },
+      ${ "battleLabelsTemplates.xc":"def.teamRating"}
+      {}
+          ]
   }
 }
