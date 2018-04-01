@@ -1,6 +1,6 @@
 ﻿/**
- * Special XVM hotkeys.
- * Специальные горячие клавиши XVM.
+ * Special xUI hotkeys.
+ * Специальные горячие клавиши xUI.
  */
 {
   "hotkeys": {
@@ -11,7 +11,7 @@
     //
     // Minimap zooming.
     // Увеличение миникарты.
-    "minimapZoom":         { "enabled": true, "keyCode": 29, "onHold": true },
+    "minimapZoom":         { "enabled": true, "keyCode": 157, "onHold": true },
     // Minimap alternative mode.
     // Альтернативный режим миникарты.
     "minimapAltMode":      { "enabled": true, "keyCode": 29, "onHold": true },

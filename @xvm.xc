@@ -50,7 +50,7 @@
 
     // Config description.
     // Описание конфига.
-    "description": "my settings for XVM",
+    "description": "my settings for xUI",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.

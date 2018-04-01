@@ -5,7 +5,7 @@
  */
 {
   "sounds": {
-    "enabled": false,
+    "enabled": true,
     // true to enable remote communication between WoT client and WWISE Authoring Tools
     // установите в true для включения коммуникации между клиентом WoT и WWISE Authoring Tools
     "remote_communication": false,
@@ -55,8 +55,8 @@
       //"time_buzzer_01": "",
       //"time_buzzer_02": "",
       //
-      // Sound events added by XVM
-      // Звуковые события, добавленные в XVM
+      // Sound events added by xUI
+      // Звуковые события, добавленные в xUI
       //
       // Sixth sense perk
       // Перк Шестое чувство

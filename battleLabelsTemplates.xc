@@ -7,7 +7,7 @@
   // Шаблоны.
   "def": {
     "hitlogHeader": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
       "y": "{{pp.mode=0?65|40}}",
@@ -33,7 +33,7 @@
     // Total hp indicator.
     // Индикатор общего HP команд.
     "totalHP": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 0,
       "y": 30,
@@ -46,7 +46,7 @@
     // Avg damage on current vehicle.
     // Средний урон на текущей технике.
     "avgDamage": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_UPDATE_HP)",
       "x": -170,
       "y": 30,
@@ -59,7 +59,7 @@
     // Threshold necessary for achievements "High caliber".
     // Порог необходимый для получения достижения "Основной калибр".
     "mainGun": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 170,
       "y": 30,
@@ -109,7 +109,7 @@
     // Display the last damage (hit) (see damageLog.xc).
     // Отображение последнего урона (попадания) (см. damageLog.xc).
     "lastHit": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_LAST_HIT)",
       "x": "{{py:xvm.damageLog.lastHit_x}}",
       "y": "{{py:xvm.damageLog.lastHit_y}}",
@@ -154,7 +154,7 @@
       "format": "ПОЖАР"
     },
     "totalEfficiency": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
       "y": "{{pp.mode=0?65|35}}",
@@ -232,7 +232,7 @@
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio%0.1f}}</b>"
-    },
+          },
     "teamRating": {
       "enabled": true,
       "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",

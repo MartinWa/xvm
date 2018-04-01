@@ -10,7 +10,7 @@
     // Маркер статуса засвета противника.
     "enemySpottedMarker": {
       // false - отключить.
-      "enabled": false,
+      "enabled": true,
       // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
       // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
       "alpha": "{{a:spotted}}",
@@ -36,7 +36,7 @@
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
-      "enabled": false,
+      "enabled": true,
       "x": 88, "y": -2, "align": "center", "bindToIcon": true,
       "textFormat": {
         "font": "xvm",
@@ -48,13 +48,13 @@
     // Clan icon.
     // Иконка клана.
     "clanIcon": {
-      "enabled": false,
+      "enabled": true,
       "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
       //"format": "<img src='{{clanicon}}' width='16' height='16'>"
     },
-    // XVM user marker.
-    // Маркер пользователя XVM.
+    // xUI user marker.
+    // Маркер пользователя xUI.
     "xvmUserMarker": {
       "enabled": false,
       "x": 10, "y": 5, "bindToIcon": true,
