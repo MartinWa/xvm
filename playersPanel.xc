@@ -10,7 +10,7 @@
     // Маркер статуса засвета противника.
     "enemySpottedMarker": {
       // false - отключить.
-      "enabled": true,
+      "enabled": false,
       // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
       // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
       "alpha": "{{a:spotted}}",
@@ -36,7 +36,7 @@
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
-      "enabled": true,
+      "enabled": false,
       "x": 88, "y": -2, "align": "center", "bindToIcon": true,
       "textFormat": {
         "font": "xvm",
@@ -48,7 +48,7 @@
     // Clan icon.
     // Иконка клана.
     "clanIcon": {
-      "enabled": true,
+      "enabled": false,
       "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
       //"format": "<img src='{{clanicon}}' width='16' height='16'>"
@@ -460,7 +460,7 @@
       "vehicleXOffsetRight": 0,
       // Width of the vehicle name column. Default is 72.
       // Ширина поля названия танка. По умолчанию: 72.
-      "vehicleWidth": 72,
+      "vehicleWidth": 120,
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
       "vehicleFormatLeft": "<font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{vehicle}} {{r}}</font>",
