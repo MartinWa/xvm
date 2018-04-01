@@ -1,12 +1,12 @@
-﻿/**
- * Parameters for login screen
+/**
+ * Parameters for login screen ASLAIN
  * Параметры экрана логина
  */
 {
   "login": {
     // Save last server
     // Сохранять последний сервер
-    "saveLastServer": true,
+    "saveLastServer": false,
     // Auto enter to the game
     // Автоматический вход в игру
     "autologin": true,
@@ -16,7 +16,7 @@
     // Ping servers
     // Пинг серверов
     "pingServers": {
-      // true - enable display of ping to the servers
+      // true - Enable display of ping to the servers
       // true - показывать пинг до серверов
       "enabled": false,
       // Update interval, in ms
@@ -24,27 +24,27 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 5,
+      "x": 20,
       "y": 30,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-      "hAlign": "left",
+      "hAlign": "top",
       // Vertical alignment of field at screen ("top", "center", "bottom").
       // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
-      "vAlign": "top",
+      "vAlign": "left",
       // Transparency
       // Прозрачность от 0 до 100
-      "alpha": 80,
+      "alpha": 100,
       // If set, draw image at background.
       // Фоновое изображение, если задано.
       // example: "bgImage": "cfg://My/img/my.png",
       "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
-      "delimiter": ": ",
+      "delimiter": "\n",
       // Maximum number of column rows
       // Максимальное количество строк одной колонки
-      "maxRows": 3,
+      "maxRows": 2,
       // Gap between columns
       // Пространство между колонками
       "columnGap": 10,
@@ -72,16 +72,16 @@
         // Font name
         // Название шрифта
         "name": "$TextFont",
-        "size": 12, // Размер
+        "size": 16, // Размер
         "bold": false,  // Жирный
         "italic": false, // Курсив
         // Different colors depending on server response time
         // Разные цвета в зависимости от времени отклика сервера
         "color": {
-          "great": "0xFFCC66", // Отличный
-          "good": "0xE5E4E1",  // Хороший
-          "poor": "0x96948F",  // Так себе
-          "bad": "0xD64D4D"    // Плохой
+          "great": "0x60ff00",
+          "good":  "0xF8F400",
+          "poor":  "0xFE7903",
+          "bad":   "0xFE0E00"
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
@@ -117,16 +117,16 @@
       }
     },
     "onlineServers": {
-      // true - enable display online of servers
+      // true - Enable display online of servers
       // true - показывать онлайн серверов
       "enabled": false,
       // Axis field coordinates
       // Положение поля по осям
-      "x": -5,
-      "y": 30,
+      "x": 5,
+      "y": 90,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-      "hAlign": "right",
+      "hAlign": "left",
       // Vertical alignment of field at screen ("top", "center", "bottom").
       // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
       "vAlign": "top",
@@ -176,10 +176,10 @@
         // Different colors depending on people online
         // Разные цвета в зависимости от количества игроков
         "color": {
-          "great": "0x60ff00", // Отличный
-          "good": "0xF8F400",  // Хороший
-          "poor": "0xFE7903",  // Так себе
-          "bad": "0xFE0E00"    // Плохой
+          "great": "0x60ff00",
+          "good": "0xF8F400",
+          "poor": "0xFE7903",
+          "bad": "0xFE0E00"
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна

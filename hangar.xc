@@ -1,9 +1,28 @@
-﻿/**
- * Parameters for hangar
+/**
+ * Parameters for hangar DEFAULT XVM
  * Параметры ангара
  */
 {
   "hangar": {
+    // hangar type: null (default), "premium", "basic"
+    // тип ангара: null (по умолчанию), "premium", "basic"
+    "hangarType": null,
+    // Hangar camera settings
+    // Настройки камеры в ангаре
+    "camera": {
+      // Minumim distance
+      // Минимальное расстояние
+      "minDistance": 4,
+      // Maximum distance
+      // Максимальное расстояние
+      "maxDistance": 12,
+      // Start distance
+      // Начальное расстояние
+      "startDistance": 10,
+      // Camera zoom sensitivity (lower is slower)
+      // Чувствительность приближения камеры (меньше - медленнее)
+      "zoomSensitivity": 1
+    },
     // Show "Buy premium" button
     // Показать кнопку "Купить премиум"
     "showBuyPremiumButton": true,
@@ -38,11 +57,11 @@
       // Cмещение по оси Y
       "offsetY": 0
     },
-    // true - enable crew auto return function
-    // true - включить функцию автовозврата экипажа
+    // true - Enable crew auto return function
+    // true - Включить функцию автовозврата экипажа
     "enableCrewAutoReturn": false,
-    // true - return crew check box is selected by default
-    // true - включить галочку возврата экипажа по умолчанию
+    // true - Return crew check box is selected by default
+    // true - Включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
     // Number of perks to show without grouping
     // Количество перков, которые отображаются без группировки
@@ -104,14 +123,14 @@
       // Cмещение по оси Y
       "offsetY": 0
     },
-    // true - use credits instead of gold as default currency for ammo and equipment
-    // true - использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
+    // true - Use credits instead of gold as default currency for ammo and equipment
+    // true - Использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
     "defaultBoughtForCredits": true,
-    // true - enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
-    // true - включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
+    // true - Enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
+    // true - Включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
     "enableEquipAutoReturn": true,
-    // true - make vehicle not ready for battle if low ammo
-    // true - сделать машину не готовой к битве если мало снарядов
+    // true - Make vehicle not ready for battle if low ammo
+    // true - Сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
@@ -125,25 +144,25 @@
     //   blink - мигать кнопкой
     //   full - мигать и показать счетчик (поведение клиента по-умолчанию)
     "notificationsButtonType": "full",
-    // true - hide price button in tech tree
-    // true - прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": false,
-    // true - show mastery mark in tech tree
-    // true - показывать знак мастерства в дереве исследований
+    // true - Hide price button in tech tree
+    // true - Прятать кнопку с ценой в дереве исследований
+    "hidePricesInTechTree": true,
+    // true - Show mastery mark in tech tree
+    // true - Показывать знак мастерства в дереве исследований
     "masteryMarkInTechTree": false,
-    // true - allow to consider the exchange of experience with gold in tech tree
-    // true - разрешить учитывать обмен опыта за золото в дереве исследований
+    // true - Allow to consider the exchange of experience with gold in tech tree
+    // true - Разрешить учитывать обмен опыта за золото в дереве исследований
     "allowExchangeXPInTechTree": true,
-    // true - show flags in barracks
-    // true - показывать флаги в казарме
+    // true - Show flags in barracks
+    // true - Показывать флаги в казарме
     "barracksShowFlags": true,
-    // true - show skills in barracks
-    // true - показывать умения в казарме
+    // true - Show skills in barracks
+    // true - Показывать умения в казарме
     "barracksShowSkills": true,
     // Ping servers
     // Пинг серверов
     "pingServers": {
-      // true - enable display of ping to the servers
+      // true - Enable display of ping to the servers
       // true - показывать пинг до серверов
       "enabled": false,
       // Update interval, in ms
@@ -151,8 +170,8 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 85,
-      "y": 52,
+      "x": 80,
+      "y": 53,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -174,16 +193,16 @@
       "maxRows": 2,
       // Gap between columns
       // Пространство между колонками
-      "columnGap": 3,
+      "columnGap": 5,
       // Leading between lines.
       // Пространство между строками
-      "leading": 2,
+      "leading": 0,
       // layer - "bottom", "normal" (default), "top".
       // слой - "bottom", "normal" (по-умолчанию), "top".
-      "layer": "normal",
+      "layer": "top",
       // true - show title "Ping"
       // true - показывать заголовок "Пинг"
-      "showTitle": true,
+      "showTitle": false,
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
@@ -211,10 +230,10 @@
         // Different colors depending on server response time
         // Разные цвета в зависимости от времени отклика сервера
         "color": {
-          "great": "0xFFCC66",  // Отличный
-          "good":  "0xE5E4E1",  // Хороший
-          "poor":  "0x96948F",  // Так себе
-          "bad":   "0xD64D4D"   // Плохой
+          "great": "0x60ff00",  // Отличный
+          "good":  "0xF8F400",  // Хороший
+          "poor":  "0xFE7903",  // Так себе
+          "bad":   "0xFE0E00"   // Плохой
         },
         // Mark current server in the list, possible options: "none" (don't mark), "normal", "bold", "italic", "underline"
         // Выделять текущий сервер в списке, доступные опции: "none" (не выделять), "normal", "bold", "italic", "underline"
@@ -253,7 +272,7 @@
       }
     },
     "onlineServers": {
-      // true - enable display online of servers
+      // true - Enable display online of servers
       // true - показывать онлайн серверов
       "enabled": false,
       // Axis field coordinates

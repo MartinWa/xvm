@@ -87,7 +87,7 @@
     // Текстовое поле с именем игрока.
     "playerName": {
       "name": "Player name",          // название текстового поля, ни на что не влияет
-      "enabled": false,                // false - не отображать
+      "enabled": true,                // false - не отображать
       "x": 0,                         // положение по оси X
       "y": -51,                       // положение по оси Y
       "alpha": 100,                   // прозрачность (допускается использование динамической прозрачности, см. macros.txt)
@@ -143,37 +143,11 @@
       },
       "format": "{{hp}}"
     },
-   // Text field with rating marker.
-    "RatingMarker_Left": {
-      "name": "Rating Marker Left",
-      "enabled": true,
-      "x": -31,
-      "y": -17,
-      "alpha": "100",
-      "textFormat": {
-        "font": "Wingdings",
-        "size": 14,
-        "color": "{{c:r|#999999}}",
-        "align": "center",
-        "bold": true,
-        "italic": false
-      },
-      "shadow": {
-        "enabled": true,
-        "distance": 0,
-        "angle": 0,
-        "color": "0x000000",
-        "alpha": 100,
-        "blur": 2,
-        "strength": 2
-      },
-      "format": "«"
-    },
     // Text field with rating.
     // Текстовое поле с рейтингом.
     "rating": {
       "name": "Rating",
-      "enabled": false,
+      "enabled": true,
       "x": -32,
       "y": -21,
       "alpha": "{{xvm-stat?100|0}}",
@@ -181,7 +155,7 @@
       "textFormat": {
         "font": "xvm",
         "size": 17,
-        "color": "{{c:xr|#999999}}",
+        "color": "{{c:r|#999999}}",
         "bold": false,
         "italic": false
       },
@@ -196,36 +170,11 @@
       },
       "format": "&#x115;"
     },
-    "TierNumber": {
-      "name": "Tier Number",
-      "enabled": true,
-      "x": -38,
-      "y": -25,
-      "alpha": 100,
-      "align": "left",
-      "textFormat": {
-        "font": "Calibri",
-        "size": 13,
-        "color": null,
-        "bold": true,
-        "italic": false
-      },
-      "shadow": {
-        "enabled": true,
-        "distance": 0,
-        "angle": 45,
-        "color": "0x000000",
-        "alpha": 100,
-        "blur": 2,
-        "strength": 2
-      },
-      "format": "{{rlevel}}"
-    },
     // Text field with the XMQP event marker.
     // Текстовое поле с маркером события XMQP.
     "xmqpEvent": {
       "name": "xmqp event",           //  название текстового поля, ни на что не влияет
-      "enabled": false,                //  false - не отображать
+      "enabled": true,                //  false - не отображать
       "x": 0,                         //  положение по оси X
       "y": "{{battletype?-73|{{squad?-73|-58}}}}",  //  положение по оси Y
       "alpha": 100,                   //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
@@ -258,7 +207,7 @@
     // Порядковый номер игрока
     "position": {
       "name": "position",             //  название текстового поля, ни на что не влияет
-      "enabled": false,                //  false - не отображать
+      "enabled": true,                //  false - не отображать
       "x": 0,                         //  положение по оси X
       "y": -51,                       //  положение по оси Y
       "alpha": 100,                   //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
@@ -282,6 +231,17 @@
         "strength": 2                 //   интенсивность
       },
       "format": "<font size='{{battletype?13|0}}'>{{position}}</font>"  //  формат текста. См. описание макросов в macros.txt
+    },
+    // "Top tankers" rank.
+    // Позиция в "Танковых асах".
+    "topTankers": {
+      "name": "topTankers",
+      "enabled": false,
+      "x": 33,
+      "y": -21,
+      "alpha": 100,
+      "align": "left",
+      "format": "<img src='{{top_tankers_emblem}}' width='16' height='16'>"
     }
   },
   // Настройки для союзников.
@@ -395,12 +355,11 @@
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
+      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.playerName" },
       ${ "def.tankHp" },
-      ${ "def.RatingMarker_Left" },
       ${ "def.rating" },
-      ${ "def.TierNumber" },
       ${ "def.xmqpEvent" }
     ]
   },
@@ -490,11 +449,10 @@
     // Block of text fields (extended format supported, see extra-field.txt).
     // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
+      ${ "def.topTankers" },
       ${ "def.tankName" },
       ${ "def.tankHp" },
-      ${ "def.RatingMarker_Left" },
       ${ "def.rating" },
-      ${ "def.TierNumber" },
       ${ "def.position" }
     ]
   }

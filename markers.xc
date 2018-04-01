@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Over-target markers. All settings moved to separate files.
  * Маркеры над танками. Все настройки вынесены в отдельные файлы.
  */
@@ -6,7 +6,7 @@
   "markers": {
     // false - use standard client vehicle markers.
     // false - использовать стандартные маркеры клиента.
-    "enabled": true,
+    "enabled": false,
     // {{turret}} marker display strings.
     // Отображаемые строки {{turret}} маркера.
     "turretMarkers": {

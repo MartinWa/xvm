@@ -1,22 +1,22 @@
-﻿/**
- * General parameters for the battle interface.
+/**
+ * General parameters for the battle interface. DEFAULT XVM
  * Общие параметры боевого интерфейса.
  */
 {
   "battle": {
-    // false - disable tank icon mirroring (good for alternative icons).
+    // false - Disable tank icon mirroring (good for alternative icons).
     // false - отключить зеркалирования иконок танков (полезно для альтернативных иконок).
     "mirroredVehicleIcons": true,
-    // false - disable pop-up panel at the bottom after death.
+    // false - Disable pop-up panel at the bottom after death.
     // false - отключить всплывающую внизу панель после смерти.
     "showPostmortemTips": true,
     // false - disable highlighting of own vehicle icon and squad.
     // false - отключить подсветку иконки своего танка и взвода.
-    "highlightVehicleIcon": true,
+    "highlightVehicleIcon": false,
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     // http://php.net/date
-    "clockFormat": "H:i",
+    "clockFormat": "",
     // Path to clan icons folder relative to res_mods/mods/shared_resources/xvm/res.
     // Путь к папке иконок кланов относительно res_mods/mods/shared_resources/xvm/res.
     "clanIconsFolder": "clanicons/",
@@ -25,7 +25,7 @@
     "sixthSenseIcon": "xvm://res/SixthSense.png",
     // Duration of the sixth sense indicator (msec).
     // Длительность отображения индикатора 6-го чувства (мсек).
-    "sixthSenseDuration": 10000,
+    "sixthSenseDuration": 2000,
     // GUI elements settings (experts only)
     // Настройки графических элементов (только для экспертов!)
     "elements": ${"elements.xc":"elements"},

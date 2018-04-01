@@ -1,15 +1,15 @@
-﻿/**
+/**
  * Parameters for tank carousel
  * Параметры карусели танков
  */
 {
   "carousel": {
-    // false - disable customizable carousel.
-    // false - отключить настраиваемую карусель.
-    "enabled": true,
+    // false - Disable customizable carousel.
+    // false - Отключить настраиваемую карусель.
+    "enabled": false,
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
-    "cellType": "default",
+    "cellType": "normal",
     // Normal cells settings
     // Настройки ячеек обычного размера
     "normal": ${"carouselNormal.xc":"normal"},

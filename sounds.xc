@@ -1,11 +1,11 @@
-﻿/**
+/**
  * Extra sounds settings.
  * Настройки дополнительных звуков.
  * https://koreanrandom.com/forum/topic/18955-/
  */
 {
   "sounds": {
-    "enabled": true,
+    "enabled": false,
     // true to enable remote communication between WoT client and WWISE Authoring Tools
     // установите в true для включения коммуникации между клиентом WoT и WWISE Authoring Tools
     "remote_communication": false,
@@ -16,8 +16,8 @@
     // Несколько банков необходимо указывать через запятую: ["bank1.bnk", "bank2.bnk"]. Путь относителен к ./res_mods/x.x.x/audioww/
     // Разрешено использование xvm:// (путь относительно /res_mods/mods/shared_resources/xvm/ ) и cfg:// (относительно /res_mods/configs/xvm/ )
     "soundBanks": {
-      "battle": ["xvm://audioww/xvm.bnk"],
-      "hangar": ["xvm://audioww/xvm.bnk"]
+      "battle": ["xvm.bnk"],
+      "hangar": ["xvm.bnk"]
     },
     // Enable sound events logging in the xvm.log
     // Включить логгирование звуковых событий в xvm.log
@@ -34,14 +34,14 @@
       //
       // Disable original sixth sense light bulb sound event (Variant 1, Variant 2, User sound)
       // Отключить оригинальный звук лампы шестого чувства (Вариант 1, Вариант 2, Пользовательский)
-      "lightbulb": "",
-      "lightbulb_02": "",
-      "sixthSense": "",
+      "lightbulb": "lightbulb",
+      "lightbulb_02": "lightbulb_02",
+      "sixthSense": "sixthSense",
       //
-      // Disable original enemy detection event
+      // Disable original enemy detection event      
       // Отключить оригинальный звук обнаружения противника
       //"enemy_sighted_for_team": "",
-      //
+      //      
       // Disable original fire sound event
       // Отключить оригинальный звук пожара
       //"vo_fire_started": "",
@@ -55,27 +55,27 @@
       //"time_buzzer_01": "",
       //"time_buzzer_02": "",
       //
-      // Sound events added by xUI
-      // Звуковые события, добавленные в xUI
+      // Sound events added by XVM
+      // Звуковые события, добавленные в XVM
       //
       // Sixth sense perk
       // Перк Шестое чувство
-      "xvm_sixthSense": "xvm_sixthSense",
+      "xvm_sixthSense": "",
       // Sixth sense perk for Т-34-85 Rudy
       // Перк Шестое чувство для Т-34-85 Rudy
-      "xvm_sixthSenseRudy": "xvm_sixthSenseRudy",
-      // Enemy detection (Use in together with disable original enemy detection event)
+      //"xvm_sixthSenseRudy": "",
+      // Enemy detection (Use in together with disable original enemy detection event) 
       // Обнаружение противника (Используйте вместе с отключением оригинального звука обнаружения противника)
-      "xvm_enemySighted": "",
+      "xvm_enemySighted": "",      
       //"xvm_enemySighted": "xvm_enemySighted",      
       // Fire alert (Use in together with disable original event)
       // Пожар (Используйте вместе с отключением оригинального звука)
       //"xvm_fireAlert": "",
-      "xvm_fireAlert": "xvm_fireAlert",
+      "xvm_fireAlert": "fireAlert",
       // Damage ammoBay (Use in together with disable original event)
       // Повреждение боеукладки (Используйте вместе с отключением оригинального звука)
       //"xvm_ammoBay": "",
-      "xvm_ammoBay": "xvm_ammoBay",
+      "xvm_ammoBay": "ammoBay",
       // The sound of the end of recharging the gun
       // Озвучка окончания перезарядки орудия
       "xvm_gunReloaded": "",

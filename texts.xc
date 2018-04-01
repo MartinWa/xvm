@@ -1,5 +1,5 @@
 ﻿/**
- * Text substitutions.
+ * Text substitutions. DEFAULT XVM
  * Текстовые подстановки.
  */
 {

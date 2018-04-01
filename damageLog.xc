@@ -44,15 +44,15 @@
 
 {
   "damageLog": {
-    // false - disable.
+    // false - Disable.
     // false - отключить.
     "enabled": true,
     // true - disable standard detailed damage.
     // true - отключить стандартный детальный урон.
-    "disabledDetailStats": true,
+    "disabledDetailStats": false,
     // true - disable standard summarized damage.
     // true - отключить стандартный суммарный урон.
-    "disabledSummaryStats": true,
+    "disabledSummaryStats": false,
     // Log of the received damage.
     // Лог полученного урона.
     "log": {
@@ -60,9 +60,9 @@
       //false - disallow to move log in battle and allow macros for "x" and "y" settings
       //true - разрешить перемещение лога в бою и запретить макросы в настройках "x" и "y"
       //false - запретить перемещение лога в бою и разрешить макросы в настройках "x" и "y"
-      "moveInBattle": false,
-      "x": 240,
-      "y": -23,
+      "moveInBattle": true,
+      "x": 295,
+      "y": 0,
       // Kind of the received damage (macro {{dmg-kind}}).
       // Тип полученного урона (макрос {{dmg-kind}}).
       "dmg-kind": {
@@ -255,7 +255,7 @@
       },
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,130,165,180]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab><font color='{{c:vtype}}'>{{vtype}}</font><tab><font color='{{c:team-dmg}}'>{{vehicle}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,130,180,195]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab><font color='{{c:vtype}}'>{{vtype}}</font><tab><font color='{{c:team-dmg}}'>{{vehicle}}</font></textformat>"
     },
     // Background of the log of the received damage.
     // Подложка лога полученного урона.
@@ -274,7 +274,7 @@
       "showHitNoDamage": true,
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,130,165]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,135,180]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
     },
     // Background of the log of the received damage (alternative mode).
     // Подложка лога полученного урона (альтернативный режим).
@@ -292,7 +292,7 @@
       //false - disallow to move last damage in battle and allow macros for "x" and "y" settings
       //true - разрешить перемещение последнего урона в бою и запретить макросы в настройках "x" и "y"
       //false - запретить перемещение последнего урона в бою и разрешить макросы в настройках "x" и "y"
-      "moveInBattle": false,
+      "moveInBattle": true,
       "x": -120,
       "y": 200,
       // true - show hits without damage.

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * GUI elements settings (experts only)
  * Настройки графических элементов (только для экспертов!)
  * https://koreanrandom.com/forum/topic/1761-/
