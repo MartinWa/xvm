@@ -177,7 +177,7 @@
     // Таймер ремонта двигателя
     "repairTimeEngine": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_ENGINE_UPDATE)",
       "x": 4,
       "y": -147,
@@ -187,7 +187,7 @@
     // Таймер ремонта орудия
     "repairTimeGun": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_GUN_UPDATE)",
       "x": 4,
       "y": -69,
@@ -197,7 +197,7 @@
     // Таймер ремонта механизма поворота башни
     "repairTimeTurret": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_TURRET_UPDATE)",
       "x": 4,
       "y": -30,
@@ -207,7 +207,7 @@
     // Таймер ремонта сбитых гусениц
     "repairTimeTracks": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_TRACKS_UPDATE)",
       "x": 177,
       "y": -147,
@@ -217,7 +217,7 @@
     // Таймер ремонта приборов наблюдения
     "repairTimeSurveying": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_SURVEYING_UPDATE)",
       "x": 177,
       "y": -108,
@@ -227,17 +227,17 @@
     // Таймер ремонта радиостанции
     "repairTimeRadio": {
       "$ref": { "path":"def.repairTimeItem" },
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_RADIO_UPDATE)",
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio%0.1f}}</b>"
     },
     "teamRating": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",
-      "x": 230,
-      "y": 2,
+      "x": 125,
+      "y": 37,
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "textFormat": { "size": 15 },
       "format": "Team WN8: <font color='{{py:alliesAliveRatingRatio>=50?#00EE00|#EE0000}}'>{{py:alliesAliveRating}} {{py:alliesAliveRatingRatio=50?=|{{py:alliesAliveRatingRatio>50?&gt;|&lt;}}}} {{py:enemiesAliveRating}}</font> (<font face='xvm' color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}' size='20'>&#x103;</font> <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>)"
