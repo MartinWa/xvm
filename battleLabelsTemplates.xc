@@ -21,7 +21,7 @@
     },
     "hitlogBody": {
       "enabled": false,
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
+      "hotKeyCode": 54, "onHold": "true", "visibleOnHotKey": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:math.sum({{pp.widthLeft}},70)}}}}",
       "y": "{{pp.mode=0?85|60}}",
