@@ -13,9 +13,8 @@
     "login": [
     ],
     "lobby": [
-      ${ "widgetsTemplates.xc":"statistics" },
-      //${ "widgetsTemplates.xc":"clock" },
-	  {}
+      ${ "widgetsTemplates.xc":"statistics" }
+      //${ "widgetsTemplates.xc":"clock" }
     ]
   }
 }

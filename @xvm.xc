@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Main configuration file (hereinafter - the configuration).
  *
  * Attention! Use \n as newline character instead of <br> tag
@@ -46,11 +46,11 @@
   "definition": {
     // Config author.
     // Автор конфига.
-    "author": "XVM team",
+    "author": "martin",
 
     // Config description.
     // Описание конфига.
-    "description": "Default settings for XVM",
+    "description": "how i like it",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "24.10.2017",
+    "date": "23.03.2018",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.20.1.3",
+    "gameVersion": "1.0.0",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.2.1"
+    "modMinVersion": "7.5.0"
   },
 
   // Parameters for login screen.

@@ -1,10 +1,10 @@
-/**
+﻿/**
  * Parameters for squad window.
  * Параметры окна взвода.
  */
 {
   "squad": {
-    // false - Disable display info.
+    // false - disable display info.
     // false - выключить отображение информации.
     "enabled": true,
     // false - hide player clan.

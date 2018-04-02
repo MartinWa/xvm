@@ -9,21 +9,16 @@
     // Format set (extended format supported, see extra-field.txt).
     // Набор форматов (поддерживается расширенный формат, см. extra-field.txt).
     "formats": [
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vtypeSpotted" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vehicleSpotted" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.nickSpotted" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vehicleSpottedCompany" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.nickSpottedCompany" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.xmqpEvent" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.vtypeLost" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vehicleLost" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.hpCircles" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.hpCirclesLost" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.nickLost" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vtypeDead" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.vehicleDead" },
-      //${ "minimapLabelsTemplatesAlt.xc":"def.nickDead" },
-	  {}
+      ${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedAlt" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpottedAlt" },
+      ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
+      ${ "minimapLabelsTemplates.xc":"def.nickLost" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleDead" },
+      ${ "minimapLabelsTemplates.xc":"def.nickDead" }
     ]
   }
 }

@@ -1,13 +1,13 @@
-/**
- * General parameters for the battle interface. DEFAULT XVM
+﻿/**
+ * General parameters for the battle interface.
  * Общие параметры боевого интерфейса.
  */
 {
   "battle": {
-    // false - Disable tank icon mirroring (good for alternative icons).
+    // false - disable tank icon mirroring (good for alternative icons).
     // false - отключить зеркалирования иконок танков (полезно для альтернативных иконок).
     "mirroredVehicleIcons": true,
-    // false - Disable pop-up panel at the bottom after death.
+    // false - disable pop-up panel at the bottom after death.
     // false - отключить всплывающую внизу панель после смерти.
     "showPostmortemTips": true,
     // false - disable highlighting of own vehicle icon and squad.
@@ -16,7 +16,7 @@
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     // http://php.net/date
-    "clockFormat": "",
+    "clockFormat": "H:i",
     // Path to clan icons folder relative to res_mods/mods/shared_resources/xvm/res.
     // Путь к папке иконок кланов относительно res_mods/mods/shared_resources/xvm/res.
     "clanIconsFolder": "clanicons/",
