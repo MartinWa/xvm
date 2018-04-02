@@ -14,7 +14,6 @@
     ],
     "lobby": [
       ${ "widgetsTemplates.xc":"statistics" }
-      //${ "widgetsTemplates.xc":"clock" }
     ]
   }
 }

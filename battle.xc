@@ -12,7 +12,7 @@
     "showPostmortemTips": true,
     // false - disable highlighting of own vehicle icon and squad.
     // false - отключить подсветку иконки своего танка и взвода.
-    "highlightVehicleIcon": false,
+    "highlightVehicleIcon": true,
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     // http://php.net/date
