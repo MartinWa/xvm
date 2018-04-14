@@ -27,7 +27,6 @@
       ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" }, 
       ${ "battleLabelsTemplates.xc":"def.repairTimeSurveying" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeRadio" },
-      ${ "battleLabelsTemplates.xc":"def.winChance" },
       ${ "battleLabelsTemplates.xc":"def.teamRating"}
     ]
   }

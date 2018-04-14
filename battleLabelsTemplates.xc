@@ -241,18 +241,7 @@
       "y": 37,
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "textFormat": { "size": 15 },
-      "format": "Team WN8: <font color='{{py:alliesAliveRatingRatio>=50?#00EE00|#EE0000}}'>{{py:alliesAliveRating}} {{py:alliesAliveRatingRatio=50?=|{{py:alliesAliveRatingRatio>50?&gt;|&lt;}}}} {{py:enemiesAliveRating}}</font> (<font face='xvm' color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}' size='20'>&#x103;</font> <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>)"
-    },
-      "winChance": {
-      "enabled": false,
-      "updateEvent": "ON_VEHICLE_DESTROYED",
-      "x": 230,
-      "y": 2,
-      "width": 300,
-      "height": 20,
-      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
-      "textFormat": { "color": "0xF4EFE8", "size": 15 },
-      "format": "{{xvm-stat?{{chancesStatic}}{{chancesStatic? / |}}{{chancesLive}}}}"
+      "format": "WN8: <font color='{{py:alliesAliveRatingRatio>=50?#00EE00|#EE0000}}'>{{py:alliesAliveRating}} {{py:alliesAliveRatingRatio=50?=|{{py:alliesAliveRatingRatio>50?&gt;|&lt;}}}} {{py:enemiesAliveRating}}</font> (<font face='xvm' color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}' size='20'>&#x103;</font> <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>)"
     }
   }
 }
