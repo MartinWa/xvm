@@ -9,16 +9,16 @@
     "showBuyPremiumButton": true,
     // Show "Premium shop" button
     // Показать кнопку "Премиум магазин"
-    "showPremiumShopButton": false,
+    "showPremiumShopButton": true,
     // Show "General chat" button
     // Показать кнопку "Общий чат"
-    "showGeneralChatButton": false,
+    "showGeneralChatButton": true,
     // true - enable locker for gold
     // true - включить замок для золота
-    "enableGoldLocker": true,
+    "enableGoldLocker": false,
     // true - enable locker for free XP
     // true - включить замок для свободного опыта
-    "enableFreeXpLocker": true,
+    "enableFreeXpLocker": false,
     // Show/hide server info or change its parameters
     // Показать/спрятать информацию о сервере, или изменить ее параметры
     "serverInfo": {
@@ -32,15 +32,15 @@
       // Угол поворота в градусах [0..360].
       "rotation": 0,
       // X offset
-      // Cмещение по оси X
+      // Смещение по оси X
       "offsetX": 0,
       // Y offset
-      // Cмещение по оси Y
+      // Смещение по оси Y
       "offsetY": 0
     },
     // true - enable crew auto return function
     // true - включить функцию автовозврата экипажа
-    "enableCrewAutoReturn": false,
+    "enableCrewAutoReturn": true,
     // true - return crew check box is selected by default
     // true - включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
@@ -60,10 +60,10 @@
       // Угол поворота в градусах [0..360].
       "rotation": 0,
       // X offset
-      // Cмещение по оси X
+      // Смещение по оси X
       "offsetX": 0,
       // Y offset
-      // Cмещение по оси Y
+      // Смещение по оси Y
       "offsetY": 0
     },
     // Show/hide personal quests button or change its parameters
@@ -79,10 +79,10 @@
       // Угол поворота в градусах [0..360].
       "rotation": 0,
       // X offset
-      // Cмещение по оси X
+      // Смещение по оси X
       "offsetX": 0,
       // Y offset
-      // Cмещение по оси Y
+      // Смещение по оси Y
       "offsetY": 0
     },
     // Show/hide current vehicle name, type and level or change their parameters
@@ -98,18 +98,18 @@
       // Угол поворота в градусах [0..360].
       "rotation": 0,
       // X offset
-      // Cмещение по оси X
+      // Смещение по оси X
       "offsetX": 0,
       // Y offset
-      // Cмещение по оси Y
+      // Смещение по оси Y
       "offsetY": 0
     },
     // true - use credits instead of gold as default currency for ammo and equipment
     // true - использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
-    "defaultBoughtForCredits": true,
+    "defaultBoughtForCredits": false,
     // true - enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
-    "enableEquipAutoReturn": true,
+    "enableEquipAutoReturn": false,
     // true - make vehicle not ready for battle if low ammo
     // true - сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
@@ -127,10 +127,10 @@
     "notificationsButtonType": "full",
     // true - hide price button in tech tree
     // true - прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": true,
+    "hidePricesInTechTree": false,
     // true - show mastery mark in tech tree
     // true - показывать знак мастерства в дереве исследований
-    "masteryMarkInTechTree": false,
+    "masteryMarkInTechTree": true,
     // true - allow to consider the exchange of experience with gold in tech tree
     // true - разрешить учитывать обмен опыта за золото в дереве исследований
     "allowExchangeXPInTechTree": true,
