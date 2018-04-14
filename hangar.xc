@@ -9,16 +9,16 @@
     "showBuyPremiumButton": true,
     // Show "Premium shop" button
     // Показать кнопку "Премиум магазин"
-    "showPremiumShopButton": true,
+    "showPremiumShopButton": false,
     // Show "General chat" button
     // Показать кнопку "Общий чат"
-    "showGeneralChatButton": true,
+    "showGeneralChatButton": false,
     // true - enable locker for gold
     // true - включить замок для золота
-    "enableGoldLocker": false,
+    "enableGoldLocker": true,
     // true - enable locker for free XP
     // true - включить замок для свободного опыта
-    "enableFreeXpLocker": false,
+    "enableFreeXpLocker": true,
     // Show/hide server info or change its parameters
     // Показать/спрятать информацию о сервере, или изменить ее параметры
     "serverInfo": {
@@ -127,10 +127,10 @@
     "notificationsButtonType": "full",
     // true - hide price button in tech tree
     // true - прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": false,
+    "hidePricesInTechTree": true,
     // true - show mastery mark in tech tree
     // true - показывать знак мастерства в дереве исследований
-    "masteryMarkInTechTree": true,
+    "masteryMarkInTechTree": false,
     // true - allow to consider the exchange of experience with gold in tech tree
     // true - разрешить учитывать обмен опыта за золото в дереве исследований
     "allowExchangeXPInTechTree": true,
