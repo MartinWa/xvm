@@ -40,7 +40,7 @@
     },
     // true - enable crew auto return function
     // true - включить функцию автовозврата экипажа
-    "enableCrewAutoReturn": true,
+    "enableCrewAutoReturn": false,
     // true - return crew check box is selected by default
     // true - включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
@@ -106,10 +106,10 @@
     },
     // true - use credits instead of gold as default currency for ammo and equipment
     // true - использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
-    "defaultBoughtForCredits": false,
+    "defaultBoughtForCredits": true,
     // true - enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
-    "enableEquipAutoReturn": false,
+    "enableEquipAutoReturn": true,
     // true - make vehicle not ready for battle if low ammo
     // true - сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
