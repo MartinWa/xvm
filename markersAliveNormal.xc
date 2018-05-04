@@ -320,9 +320,9 @@
     // Vehicle tier.
     // Уровень танка.
     "levelIcon": {
-      "enabled": false,  // false - disable        / не отображать.
+      "enabled": true,  // false - disable        / не отображать.
       "x": 0,            // Position on the X axis / Положение по оси X.
-      "y": -21,          // Position on the Y axis / Положение по оси Y.
+      "y": -60,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
     // Markers "Help!" and "Attack!".
