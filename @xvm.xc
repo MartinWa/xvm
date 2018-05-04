@@ -50,7 +50,7 @@
 
     // Config description.
     // Описание конфига.
-    "description": "how i like it",
+    "description": "how i like it,
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "12.04.2018",
+    "date": "27.04.2018",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "1.0.0.3",
+    "gameVersion": "1.0.1",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.5.6"
+    "modMinVersion": "7.6.0"
   },
 
   // Parameters for login screen.
