@@ -422,9 +422,9 @@
     // Vehicle tier.
     // Уровень танка.
     "levelIcon": {
-      "enabled": false,
+      "enabled": true,
       "x": 0,
-      "y": -21,
+      "y": -60,
       "alpha": 100
     },
     // Markers "Help!" and "Attack!".

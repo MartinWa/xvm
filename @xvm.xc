@@ -50,7 +50,7 @@
 
     // Config description.
     // Описание конфига.
-    "description": "how i like it,
+    "description": "how i like it",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
