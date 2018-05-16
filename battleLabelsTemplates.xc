@@ -20,7 +20,7 @@
       // "format": "{{hitlog-header}}\n{{hitlog-body}}"
     },
     "hitlogBody": {
-      "enabled": true,
+      "enabled": false,
       "hotKeyCode": 54, "onHold": "true", "visibleOnHotKey": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
@@ -71,7 +71,7 @@
     // Log of the received damage (see damageLog.xc).
     // Лог полученного урона (см. damageLog.xc).
     "damageLog": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "PY(ON_HIT)",
       "x": "{{py:xvm.damageLog.dLog_x}}",
       "y": "{{py:xvm.damageLog.dLog_y}}",
@@ -161,6 +161,7 @@
       "width": "{{py:xvm.isStuns?350|260}}",
       "height": 40,
       "textFormat": { "size": 16 },
+      "screenVAlign": "bottom",
       "format": "<textformat tabstops='[65,130,196,261]' leading='-2' ><img src='xvm://res/icons/Efficiency/damage.png' vspace='-2'> <font color='{{py:xvm.totalDamage>0?{{py:xvm.totalDamageColor}}}}'>{{py:xvm.totalDamage}}</font><tab><img src='xvm://res/icons/Efficiency/assist.png' vspace='-2'> {{py:xvm.totalAssist}}<tab><img src='xvm://res/icons/Efficiency/reflect.png' vspace='-2'> {{py:xvm.totalBlocked}}<tab><img src='xvm://res/icons/Efficiency/discover.png' vspace='-2'> {{py:xvm.detection}}<tab><img src='xvm://res/icons/Efficiency/stun.png' vspace='-2'> {{py:xvm.totalStun}}</textformat>"
     },
     // Rewritable timer format
