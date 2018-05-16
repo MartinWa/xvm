@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Parameters of the Battle Statistics form.
  * Параметры окна статистики по клавише Tab.
  */
@@ -8,12 +8,12 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": -365, "y": 0, "width": 22, "height": 22, "align": "center", "alpha": 90, "bindToIcon": true,
+      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
   "statisticForm": {
-    // true - Disable Platoon/rank icons.
+    // true - disable Platoon/rank icons.
     // true - убрать отображение иконки взвода/ранга.
     "removeSquadIcon": false,
     // true - disable rank badge icons
@@ -24,10 +24,10 @@
     "vehicleIconAlpha": 100,
     // true - disable vehicle level indicator.
     // true - убрать отображение уровня танка.
-    "removeVehicleLevel": true,
+    "removeVehicleLevel": false,
     // true - disable vehicle type icon. This space will be used for formatted vehicle field.
     // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
-    "removeVehicleTypeIcon": true,
+    "removeVehicleTypeIcon": false,
     // true - disable player status icon.
     // true - убрать отображение иконки статуса игрока.
     "removePlayerStatusIcon": false,
@@ -41,17 +41,17 @@
     // Показывать рамку для поля фрагов (полезно для настройки конфига)
     "fragsFieldShowBorder": false,
     // X offset for allies squad icons
-    // Cмещение по оси X значка взвода союзников
+    // Смещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": 0,
-    // X offset for enemies squad icons field
-    // Cмещение по оси X значка взвода противников
+    // X offset for enemies squad icons
+    // Смещение по оси X значка взвода противников
     "squadIconOffsetXRight": 0,
     // X offset for allies player names field
-    // Cмещение по оси X поля ника союзников
-    "nameFieldOffsetXLeft": 0,
+    // Смещение по оси X поля ника союзников
+    "nameFieldOffsetXLeft": -11,
     // X offset for enemies player names field
-    // Cмещение по оси X поля ника противников
-    "nameFieldOffsetXRight": -9,
+    // Смещение по оси X поля ника противников
+    "nameFieldOffsetXRight": -10,
     // Width of allies player names field
     // Ширина поля ника союзников
     "nameFieldWidthLeft": 200,
@@ -59,10 +59,10 @@
     // Ширина поля ника противников
     "nameFieldWidthRight": 200,
     // X offset for "formatLeftVehicle" field
-    // Cмещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 8,
+    // Смещение по оси X поля названия танка союзников
+    "vehicleFieldOffsetXLeft": 24,
     // X offset for "formatRightVehicle" field
-    // Cмещение по оси X поля названия танка противников
+    // Смещение по оси X поля названия танка противников
     "vehicleFieldOffsetXRight": 5,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
@@ -90,7 +90,7 @@
     "fragsFieldWidthRight": 43,
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-    "formatLeftNick": "<img src='xvm://res/icons/flags/default.png' width='16' height='13'> <img src='xvm://res/icons/xvm/none.png'> <font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{name%.11s~..}} <font face='Consolas'><font size='10'>{{clan}}</font></font></font>",
+   "formatLeftNick": "<img src='xvm://res/icons/flags/default.png' width='16' height='13'> <img src='xvm://res/icons/xvm/none.png'> <font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{name%.11s~..}} <font face='Consolas'><font size='10'>{{clan}}</font></font></font>",
     // Display format for the right panel (macros allowed, see macros.txt).
     // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
     "formatRightNick": "<font color='{{c:r}}' alpha='{{alive?#FF|#80}}'><font face='Consolas'><font size='10'>{{clan}}</font></font> {{name%.11s~..}}</font> <img src='xvm://res/icons/xvm/none.png'> <img src='xvm://res/icons/flags/default.png' width='16' height='13'>",

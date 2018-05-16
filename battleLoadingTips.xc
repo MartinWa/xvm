@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Parameters of the alternative view of the Battle Loading screen.
  * Параметры альтернативного представления экрана загрузки боя.
  */
@@ -8,7 +8,7 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": -140, "y": 0, "width": 22, "height": 22, "align": "center", "alpha": 90,
+      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
@@ -28,10 +28,10 @@
     "vehicleIconAlpha": 100,
     // true - disable vehicle level indicator.
     // true - убрать отображение уровня танка.
-    "removeVehicleLevel": true,
+    "removeVehicleLevel": false,
     // true - disable vehicle type icon. This space will be used for formatted vehicle field.
     // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
-    "removeVehicleTypeIcon": true,
+    "removeVehicleTypeIcon": false,
     // Show border for name field (useful for config tuning)
     // Показывать рамку для поля имени игрока (полезно для настройки конфига)
     "nameFieldShowBorder": false,

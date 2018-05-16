@@ -463,9 +463,9 @@
       "vehicleWidth": 110,
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
-     "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}'>{{vehicle%-15.15s}}</font><font color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
+      "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}'>{{vehicle%-15.15s}}</font><font color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
       "vehicleFormatRight": "<font color='{{c:xr}}' alpha='{{alive?#FF|#80}}'>{{r}}</font><font alpha='{{alive?#FF|#80}}'>{{vehicle%15.15s}}</font>",
-       // Shadow for vehicle name field (default null = no shadow, as in vanillas client).
+      // Shadow for vehicle name field (default null = no shadow, as in vanillas client).
       // Тень для поля названия танка (по умолчанию null = без тени, как в чистом клиенте).
       "vehicleShadowLeft": null,
       "vehicleShadowRight": null,

@@ -6,7 +6,7 @@
   "minimap": {
     // false - disable.
     // false - отключить.
-    "enabled": false,
+    "enabled": true,
     // Map image transparency.
     // Прозрачность изображения карты.
     "mapBackgroundImageAlpha": 100,

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Parameters of the Battle Loading screen.
  * Параметры экрана загрузки боя.
  */
@@ -8,7 +8,7 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": -40, "y": 0, "width": 22, "height": 22, "align": "center", "alpha": 90,
+      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
@@ -28,10 +28,10 @@
     "vehicleIconAlpha": 100,
     // true - disable vehicle level indicator.
     // true - убрать отображение уровня танка.
-    "removeVehicleLevel": true,
+    "removeVehicleLevel": false,
     // true - disable vehicle type icon. This space will be used for formatted vehicle field.
     // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
-    "removeVehicleTypeIcon": true,
+    "removeVehicleTypeIcon": false,
     // Show border for name field (useful for config tuning)
     // Показывать рамку для поля имени игрока (полезно для настройки конфига)
     "nameFieldShowBorder": false,
@@ -77,7 +77,7 @@
     // false - disable highlight of icons during battle start depends on ready state.
     // false - отключить затемнение иконки не загрузившегося игрока.
     "darkenNotReadyIcon": true,
-    // Display format for the left panel (macros allowed, see macros.txt).
+        // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
     "formatLeftNick": "<img src='xvm://res/icons/flags/default.png' width='16' height='13'> <img src='xvm://res/icons/xvm/none.png'> <font size='13' color='{{c:r}}'>{{name%.10s~..}} <font face='Consolas'><font size='10'>{{clan}}</font></font></font>",
     // Display format for the right panel (macros allowed, see macros.txt).
