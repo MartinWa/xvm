@@ -46,11 +46,11 @@
   "definition": {
     // Config author.
     // Автор конфига.
-    "author": "martin",
+    "author": "XVM team",
 
     // Config description.
     // Описание конфига.
-    "description": "how i like it",
+    "description": "Default settings for XVM",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "16.05.2018",
+    "date": "12.06.2018",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "1.0.1.1",
+    "gameVersion": "1.0.2.0",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.6.2"
+    "modMinVersion": "7.6.4"
   },
 
   // Parameters for login screen.
