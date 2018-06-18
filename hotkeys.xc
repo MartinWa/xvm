@@ -20,7 +20,7 @@
     "playersPanelAltMode": { "enabled": false, "keyCode": 54, "onHold": true },
     // Vehicle markers alternative mode.
     // Альтернативный режим маркеров над танками.
-    "markersAltMode":      { "enabled": true, "keyCode": 54, "onHold": true },
+    "markersAltMode":      { "enabled": true, "onHold": true },
     // Damage log alternative mode.
     // Альтернативный режим лога полученного урона.
     "damageLogAltMode":    { "enabled": true, "keyCode": 54, "onHold": true }
