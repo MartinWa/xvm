@@ -9,16 +9,19 @@
     "showBuyPremiumButton": true,
     // Show "Premium shop" button
     // Показать кнопку "Премиум магазин"
-    "showPremiumShopButton": false,
+    "showPremiumShopButton": true,
+    // Show "Create squad" button
+    // Показать кнопку "Создать взвод"
+    "showCreateSquadButton": true,
     // Show "General chat" button
     // Показать кнопку "Общий чат"
-    "showGeneralChatButton": false,
+    "showGeneralChatButton": true,
     // true - enable locker for gold
     // true - включить замок для золота
-    "enableGoldLocker": true,
+    "enableGoldLocker": false,
     // true - enable locker for free XP
     // true - включить замок для свободного опыта
-    "enableFreeXpLocker": true,
+    "enableFreeXpLocker": false,
     // Show/hide server info or change its parameters
     // Показать/спрятать информацию о сервере, или изменить ее параметры
     "serverInfo": {
@@ -40,7 +43,7 @@
     },
     // true - enable crew auto return function
     // true - включить функцию автовозврата экипажа
-    "enableCrewAutoReturn": false,
+    "enableCrewAutoReturn": true,
     // true - return crew check box is selected by default
     // true - включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
@@ -106,7 +109,7 @@
     },
     // true - enable removable equipment auto return (Camouflage net, Stereoscope, Toolbox)
     // true - включить автовозврат съемного оборудования (Маскировочная сеть, Стереотруба, Ящик с инструментами)
-    "enableEquipAutoReturn": true,
+    "enableEquipAutoReturn": false,
     // true - make vehicle not ready for battle if low ammo
     // true - сделать машину не готовой к битве если мало снарядов
     "blockVehicleIfLowAmmo": false,
@@ -124,7 +127,7 @@
     "notificationsButtonType": "full",
     // true - hide price button in tech tree
     // true - прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": true,
+    "hidePricesInTechTree": false,
     // true - show mastery mark in tech tree
     // true - показывать знак мастерства в дереве исследований
     "masteryMarkInTechTree": true,
@@ -352,6 +355,14 @@
         "blur": 4,
         "strength": 2
       }
+    },
+    // Show/hide notifications counters in the main menu
+    // Показывать/прятать счетчики уведомлений в главном меню
+    "notificationCounter": {
+      "store": true,                        // Store / Магазин
+      "missions": true,                     // Missions / Задачи
+      "profile": true,                      // Profile / Достижения
+      "PersonalMissionOperationsPage": true // Campains / Кампании
     },
     // Parameters for tank carousel
     // Параметры карусели танков
