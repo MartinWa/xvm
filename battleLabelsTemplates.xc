@@ -20,7 +20,7 @@
       // "format": "{{hitlog-header}}\n{{hitlog-body}}"
     },
     "hitlogBody": {
-      "enabled": false,
+      "enabled": true,
       "hotKeyCode": 54, "onHold": "true", "visibleOnHotKey": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
@@ -233,7 +233,7 @@
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio%0.1f}}</b>"
- },
+    },
     "teamRating": {
       "enabled": true,
       "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",
