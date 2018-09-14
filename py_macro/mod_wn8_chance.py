@@ -6,6 +6,7 @@ from Avatar import PlayerAvatar
 from debug_utils import _doLog
 
 import xfw
+from xfw_actionscript.python import *
 from xvm_main.python.stats import _stat, _Stat
 import xvm_main.python.config as xvm_config
 import xvm_main.python.vehinfo as xvm_vehinfo
@@ -88,6 +89,7 @@ def fixStats(stats):
 vehicles = {}
 enemies_wn8 = 0
 allies_wn8 = 0
+x = 0
 
 @xvm.export('enemiesAliveRating', deterministic=False)
 def enemiesAliveRating():
@@ -99,9 +101,49 @@ def alliesAliveRating():
 
 @xvm.export('alliesAliveRatingRatio', deterministic=False)
 def alliesAliveRatingRatio():
-    if (allies_wn8+enemies_wn8) != 0:
-        return int(allies_wn8 / (allies_wn8+enemies_wn8) * 100)
-    return 0
+    if enemies_wn8 != 0 and allies_wn8 != 0:
+        if enemies_wn8 > allies_wn8:
+            return int(50 - (1.0 - allies_wn8 / enemies_wn8) * 50)
+        else:
+            return int(50 + (1.0 - enemies_wn8 / allies_wn8) * 50)
+    else:
+        return int(0)
+    return 
+
+@xvm.export('c_alliesAliveRatingRatio', deterministic=False)
+def c_alliesAliveRatingRatio():
+    if enemies_wn8 != 0 and allies_wn8 != 0:
+        if enemies_wn8 > allies_wn8:
+            x = float(50 - (1.0 - allies_wn8 / enemies_wn8) * 50)
+            if x > 64.5:
+                return '#D042F3'
+            elif x > 57.5:
+                return '#02C9B3'
+            elif x > 52.5:
+                return '#60FF00'
+            elif x > 48.5:
+                return '#F8F400'
+            elif x > 46.5:
+                return '#FE7903'
+            else:
+                return '#FE0E00'
+        else:
+            x = float(50 + (1.0 - enemies_wn8 / allies_wn8) * 50)
+            if x > 64.5:
+                return '#D042F3'
+            elif x > 57.5:
+                return '#02C9B3'
+            elif x > 52.5:
+                return '#60FF00'
+            elif x > 48.5:
+                return '#F8F400'
+            elif x > 46.5:
+                return '#FE7903'
+            else:
+                return '#FE0E00'
+    else:
+        return '#FFFFFF'
+    return
 
 def setVehicleStats(vid, vehicle):
     global enemies_wn8, allies_wn8
