@@ -6,11 +6,12 @@ from Avatar import PlayerAvatar
 from debug_utils import _doLog
 
 import xfw
-from xfw_actionscript.python import *
 from xvm_main.python.stats import _stat, _Stat
 import xvm_main.python.config as xvm_config
 import xvm_main.python.vehinfo as xvm_vehinfo
 from xvm_main.python.consts import XVM_COMMAND
+from xfw_actionscript.python import as_event
+
 
 class Config(object):
     def __init__(self):
@@ -115,29 +116,29 @@ def c_alliesAliveRatingRatio():
     if enemies_wn8 != 0 and allies_wn8 != 0:
         if enemies_wn8 > allies_wn8:
             x = float(50 - (1.0 - allies_wn8 / enemies_wn8) * 50)
-            if x > 64.5:
+            if x > 89.5:
                 return '#D042F3'
-            elif x > 57.5:
+            elif x > 74.5:
                 return '#02C9B3'
-            elif x > 52.5:
+            elif x > 59.5:
                 return '#60FF00'
-            elif x > 48.5:
+            elif x > 39.5:
                 return '#F8F400'
-            elif x > 46.5:
+            elif x > 24.5:
                 return '#FE7903'
             else:
                 return '#FE0E00'
         else:
             x = float(50 + (1.0 - enemies_wn8 / allies_wn8) * 50)
-            if x > 64.5:
+            if x > 89.5:
                 return '#D042F3'
-            elif x > 57.5:
+            elif x > 74.5:
                 return '#02C9B3'
-            elif x > 52.5:
+            elif x > 59.5:
                 return '#60FF00'
-            elif x > 48.5:
+            elif x > 39.5:
                 return '#F8F400'
-            elif x > 46.5:
+            elif x > 24.5:
                 return '#FE7903'
             else:
                 return '#FE0E00'
@@ -179,8 +180,10 @@ def setVehicleStats(vid, vehicle):
             else:
                 enemies_wn8 += float(vehicle['wn8'])
 
+
+
             LOG_DEBUG('ALLIES=%d ENEMIES=%d RATIO=%s' % (allies_wn8, enemies_wn8, (allies_wn8  * 100 / enemies_wn8) if enemies_wn8 != 0 else -1))
-            xfw.as_event('ON_UPDATE_TEAM_RATING')
+            as_event('ON_UPDATE_TEAM_RATING')
 
 def onStatsReady():
     for vid, vehicle in vehicles.iteritems():
@@ -228,7 +231,7 @@ def FragsCollectableStats_addVehicleStatusUpdate(self, vInfoVO):
                     enemies_wn8 -= vehicle['wn8']
 
                 LOG_DEBUG('ALLIES=%d ENEMIES=%d RATIO=%s' % (allies_wn8, enemies_wn8, (allies_wn8  * 100 / enemies_wn8) if enemies_wn8 != 0 else -1))
-                xfw.as_event('ON_UPDATE_TEAM_RATING')
+                as_event('ON_UPDATE_TEAM_RATING')
 
 @xfw.registerEvent(PlayerAvatar, '_PlayerAvatar__destroyGUI')
 def PlayerAvatar__destroyGUI(self):
