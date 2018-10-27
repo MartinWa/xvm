@@ -1,4 +1,4 @@
-﻿/**
+/**
  * List of battle interface labels.
  * Список текстовых полей боевого интерфейса.
  */
@@ -24,10 +24,12 @@
       ${ "battleLabelsTemplates.xc":"def.repairTimeEngine" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeGun" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeTurret" },
-      ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" }, 
+      ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeSurveying" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeRadio" },
-      ${ "battleLabelsTemplates.xc":"def.teamRating"}
+      ${ "battleLabelsTemplates.xc":"def.teamRating"},
+      ${ "battleLabelSight.xc":"def.timeFlight"},
+      ${ "battleLabelSight.xc":"def.timeAIM"}
     ]
   }
 }
