@@ -46,11 +46,11 @@
   "definition": {
     // Config author.
     // Автор конфига.
-    "author": "XVM team",
+    "author": "martin",
 
     // Config description.
     // Описание конфига.
-    "description": "Default settings for XVM",
+    "description": "how i like itM",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
