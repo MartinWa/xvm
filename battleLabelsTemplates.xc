@@ -21,7 +21,7 @@
     },
     "hitlogBody": {
       "enabled": true,
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
+      "hotKeyCode": 54, "onHold": "true", "visibleOnHotKey": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
       "y": "{{pp.mode=0?95|65}}",
@@ -76,7 +76,7 @@
       "x": "{{py:xvm.damageLog.dLog_x}}",
       "y": "{{py:xvm.damageLog.dLog_y}}",
       "width": 300,
-      "height": 210,
+      "height": 233,
       "layer": "bottom",
       "screenVAlign": "bottom",
       "shadow": { 
@@ -110,7 +110,7 @@
     // Display the last damage (hit) (see damageLog.xc).
     // Отображение последнего урона (попадания) (см. damageLog.xc).
     "lastHit": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "PY(ON_LAST_HIT)",
       "x": "{{py:xvm.damageLog.lastHit_x}}",
       "y": "{{py:xvm.damageLog.lastHit_y}}",
@@ -152,16 +152,17 @@
       "screenVAlign": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 3 },
       "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
-      "format": "ПОЖАР"
+      "format": "{{l10n:fire}}"
     },
     "totalEfficiency": {
       "enabled": true,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
-      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?65|35}}",
+      "x": 2,
+      "y": -213,
       "width": "{{py:xvm.isStuns?350|260}}",
-      "height": 22,
+      "height": 40,
       "textFormat": { "size": 16 },
+      "screenVAlign": "bottom",
       "format": "<textformat tabstops='[65,130,196,261]' leading='-2' ><img src='xvm://res/icons/Efficiency/damage.png' vspace='-2'> <font color='{{py:xvm.totalDamage>0?{{py:xvm.totalDamageColor}}}}'>{{py:xvm.totalDamage}}</font><tab><img src='xvm://res/icons/Efficiency/assist.png' vspace='-2'> {{py:xvm.totalAssist}}<tab><img src='xvm://res/icons/Efficiency/reflect.png' vspace='-2'> {{py:xvm.totalBlocked}}<tab><img src='xvm://res/icons/Efficiency/discover.png' vspace='-2'> {{py:xvm.detection}}<tab><img src='xvm://res/icons/Efficiency/stun.png' vspace='-2'> {{py:xvm.totalStun}}</textformat>"
     },
     // Rewritable timer format
@@ -233,6 +234,15 @@
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio%0.1f}}</b>"
+    },
+    "teamRating": {
+      "enabled": true,
+      "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",
+      "x": 230,
+      "y": 2,
+      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
+      "textFormat": { "size": 15 },
+      "format": "Win Chance: <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>"
     }
   }
 }
