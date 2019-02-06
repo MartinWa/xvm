@@ -22,6 +22,15 @@
     // Background transparency (default - 100)
     // Прозрачность подложки (по умолчанию - 100)
     "backgroundAlpha": 100,
+    // Slot transparency (default - 100)
+    // Прозрачность слота (по умолчанию - 100)
+    "slotBackgroundAlpha": 100,
+    // Slot border transparency (default - 100)
+    // Прозрачность рамки слота (по умолчанию - 100)
+    "slotBorderAlpha": 100,
+    // Transparency of gradient frames at the carousel edges (default - 100)
+    // Прозрачность градиентных рамок  по краям карусели (по умолчанию - 100)
+    "edgeFadeAlpha": 100,
     // Mouse wheel scrolling speed multiplier (default - 1)
     // Множитель скорости прокрутки колесом мыши (по умолчанию - 1)
     "scrollingSpeed": 1,
@@ -68,8 +77,8 @@
     // Tank sorting criteria, available options: (minus = reverse order)
     // Критерии сортировки танков, доступные значения: (минус = в обратном порядке)
     // "nation", "type", "level", "-level", "maxBattleTier", "-maxBattleTier", "premium", "-premium",
-    // "winRate", "-winRate", "markOfMastery", "-markOfMastery", "xtdb", "-xtdb", "xte", "-xte",
-    // "wtr", "-wtr", "damageRating", "-damageRating", "marksOnGun", "-marksOnGun"
+    // "battles", "-battles", "winRate", "-winRate", "markOfMastery", "-markOfMastery", "xtdb", "-xtdb",
+    // "xte", "-xte", "wtr", "-wtr", "damageRating", "-damageRating", "marksOnGun", "-marksOnGun"
     "sorting_criteria": ["nation", "type", "level"],
     // Suppress the tooltips for tanks in carousel
     // Убрать подсказки к танкам в карусели
