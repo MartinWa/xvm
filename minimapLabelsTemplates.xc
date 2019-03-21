@@ -46,7 +46,7 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "textFormat": { "size": 8 },
       "format": ""
-    },
+     },
     // Vehicle name, visible, alternative mode.
     // Название техники, видимый, альтернативный режим.
     "vehicleSpottedAlt": {
