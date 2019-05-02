@@ -68,7 +68,7 @@
     },
     // true - enable crew auto return function.
     // true - включить функцию автовозврата экипажа.
-    "enableCrewAutoReturn": true,
+    "enableCrewAutoReturn": false,
     // true - return crew check box is selected by default.
     // true - включить галочку возврата экипажа по умолчанию.
     "crewReturnByDefault": false,
