@@ -45,13 +45,14 @@
       "y": "{{squad?7|-1}}",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "textFormat": { "size": 8 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>"
+      "format": ""
     },
     // Vehicle name, visible, alternative mode.
     // Название техники, видимый, альтернативный режим.
     "vehicleSpottedAlt": {
       "$ref": { "path":"def.vehicleSpotted" },
-      "y": "{{ally?{{battletype?7|{{squad?7|-1}}}}|-1}}"
+      "y": "{{ally?{{battletype?7|{{squad?7|-1}}}}|-1}}",
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>"
     },
     // Player nickname, visible.
     // Ник игрока, видимый.
@@ -102,7 +103,7 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
       "layer": "bottom",
       "textFormat": { "size": 8 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{vehicle}}</i></font>"
+      "format": ""
     },
     // Player nickname, missing.
     // Ник игрока, пропавший.
@@ -139,7 +140,7 @@
       "flags": [ "squadman", "dead" ],
       "layer": "substrate",
       "textFormat": { "size": 8 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>"
+      "format": ""
     },
     // Player nickname, dead.
     // Ник игрока, мертвый.
