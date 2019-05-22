@@ -46,12 +46,11 @@
     "totalEfficiency": {
       "enabled": true,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
-      "x": 2,
-      "y": -213,
+      "x": "{{pp.mode=0?{{battletype-key=epic_battle?240|5}}|{{py:sum({{pp.widthLeft}},50)}}}}",
+      "y": "{{pp.mode=0?{{battletype-key=epic_battle?55|65}}|35}}",
       "width": "{{py:xvm.isStuns?350|260}}",
-      "height": 40,
+      "height": 22,
       "textFormat": { "size": 16 },
-      "screenVAlign": "bottom",
       "format": "<textformat tabstops='[65,130,196,261]' leading='-2' ><img src='xvm://res/icons/Efficiency/damage.png' vspace='-2'> <font color='{{py:xvm.totalDamage>0?{{py:xvm.totalDamageColor}}}}'>{{py:xvm.totalDamage}}</font><tab><img src='xvm://res/icons/Efficiency/assist.png' vspace='-2'> {{py:xvm.totalAssist}}<tab><img src='xvm://res/icons/Efficiency/reflect.png' vspace='-2'> {{py:xvm.totalBlocked}}<tab><img src='xvm://res/icons/Efficiency/discover.png' vspace='-2'> {{py:xvm.detection}}<tab><img src='xvm://res/icons/Efficiency/stun.png' vspace='-2'> {{py:xvm.totalStun}}</textformat>"
     },
     // Total hp indicator.
@@ -65,7 +64,7 @@
       "align": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "textFormat": { "font": "mono", "size": 18, "align": "center" },
-      "format": "{{py:xvm.total_hp.text}}"
+      "format": "{{battletype-key!=epic_battle?{{py:xvm.total_hp.text}}}}"
     },
     // Avg damage on current vehicle.
     // Средний урон на текущей технике.
@@ -247,7 +246,7 @@
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio}}</b>"
-    },
+     },
       "teamRating": {
         "enabled": true,
         "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",
@@ -256,6 +255,6 @@
         "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
         "textFormat": { "size": 15 },
         "format": "Win Chance: <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>"
-    }
+     }
   }
 }
