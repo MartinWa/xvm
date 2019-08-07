@@ -4,7 +4,7 @@
  */
 {
   "vehicleNames": {
-    // Last update: 20.06.2019
+    // Last update: 06.08.2019
     "china-Ch01_Type59":                     {"name": null, "short": null},
     "china-Ch01_Type59_Gold":                {"name": null, "short": null},
     "china-Ch02_Type62":                     {"name": null, "short": null},
@@ -215,6 +215,8 @@
     "germany-G13_VK3001H":                   {"name": null, "short": null},
     "germany-G140_HWK_30":                   {"name": null, "short": null},
     "germany-G141_VK7501K":                  {"name": null, "short": null},
+    "germany-G142_M48RPz":                   {"name": null, "short": null},
+    "germany-G143_E75_TS":                   {"name": null, "short": null},
     "germany-G15_VK3601H":                   {"name": null, "short": null},
     "germany-G16_PzVIB_Tiger_II":            {"name": null, "short": null},
     "germany-G16_PzVIB_Tiger_II_F":          {"name": null, "short": null},
@@ -404,7 +406,12 @@
     "uk-GB08_Churchill_I":                   {"name": null, "short": null},
     "uk-GB08_Churchill_I_IGR":               {"name": null, "short": null},
     "uk-GB09_Churchill_VII":                 {"name": null, "short": null},
+    "uk-GB100_Manticore":                    {"name": null, "short": null},
     "uk-GB101_FV1066_Senlac":                {"name": null, "short": null},
+    "uk-GB102_LHMTV":                        {"name": null, "short": null},
+    "uk-GB103_GSOR3301_AVR_FS":              {"name": null, "short": null},
+    "uk-GB104_GSR_3301_Setter":              {"name": null, "short": null},
+    "uk-GB105_Black_Prince_2019":            {"name": null, "short": null},
     "uk-GB10_Black_Prince":                  {"name": null, "short": null},
     "uk-GB11_Caernarvon":                    {"name": null, "short": null},
     "uk-GB11_Caernarvon_IGR":                {"name": null, "short": null},
@@ -518,7 +525,10 @@
     "usa-A121_M26_Cologne":                  {"name": null, "short": null},
     "usa-A122_TS-5":                         {"name": null, "short": null},
     "usa-A123_T78":                          {"name": null, "short": null},
+    "usa-A124_T54E2":                        {"name": null, "short": null},
+    "usa-A125_AEP_1":                        {"name": null, "short": null},
     "usa-A126_PzVI_Tiger_II_capt":           {"name": null, "short": null},
+    "usa-A127_TL_1_LPC":                     {"name": null, "short": null},
     "usa-A12_T32":                           {"name": null, "short": null},
     "usa-A13_T34_hvy":                       {"name": null, "short": null},
     "usa-A13_T34_hvy_BF":                    {"name": null, "short": null},
@@ -629,6 +639,7 @@
     "ussr-R117_T34_85_Rudy":                 {"name": null, "short": null},
     "ussr-R118_T28_F30":                     {"name": null, "short": null},
     "ussr-R119_Object_777":                  {"name": null, "short": null},
+    "ussr-R119_Object_777C":                 {"name": null, "short": null},
     "ussr-R11_MS-1":                         {"name": null, "short": null},
     "ussr-R11_MS-1_bot":                     {"name": null, "short": null},
     "ussr-R120_T22SR_A22":                   {"name": null, "short": null},
