@@ -257,15 +257,6 @@
       "x": 177,
       "y": -69,
       "format": "<b>{{py:repairTimeRadio}}</b>"
-    },	
-    "teamRating": {	
-      "enabled": true,	
-      "updateEvent": "PY(ON_UPDATE_TEAM_RATING)",	
-      "x": 230,	
-      "y": 2,	
-      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },	
-      "textFormat": { "size": 15 },	
-      "format": "Win Chance: <font color='{{py:alliesAliveRatingRatio>=90?#D042F3|{{py:alliesAliveRatingRatio>=75?#00AFFF|{{py:alliesAliveRatingRatio>=60?#60FF00|{{py:alliesAliveRatingRatio>=40?#F8F400|{{py:alliesAliveRatingRatio>=25?#FE7903|#FE0E00}}}}}}}}}}'>{{py:alliesAliveRatingRatio}}%</font>"	
     }
   }
 }

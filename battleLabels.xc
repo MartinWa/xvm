@@ -25,10 +25,9 @@
       ${"battleLabelsTemplates.xc":"def.repairTimeEngine"},
       ${"battleLabelsTemplates.xc":"def.repairTimeGun"},
       ${"battleLabelsTemplates.xc":"def.repairTimeTurret"},
-      ${"battleLabelsTemplates.xc":"def.repairTimeComplex"}, 
+      ${"battleLabelsTemplates.xc":"def.repairTimeComplex"},
       ${"battleLabelsTemplates.xc":"def.repairTimeSurveying"},
-      ${"battleLabelsTemplates.xc":"def.repairTimeRadio"},
-      ${ "battleLabelsTemplates.xc":"def.teamRating"}
+      ${"battleLabelsTemplates.xc":"def.repairTimeRadio"}
     ]
   }
 }
