@@ -55,17 +55,18 @@
     // Config description.
     // Описание конфига.
     "description": "how i like it",
+
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
     "url": "https://modxvm.com/",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "1.7.1.1",
+    "gameVersion": "1.7.1.2",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "8.3.0",
+    "modMinVersion": "8.3.1",
 
     // Config last modified.
     // Дата последней модификации конфига.
